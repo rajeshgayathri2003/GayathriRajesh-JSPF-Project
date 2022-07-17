@@ -1,0 +1,14 @@
+{
+  "name": "google-calandar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Gayathri Rajesh\"",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^105.0.0"
+  }
+}
