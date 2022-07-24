@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body style="font-family: 'Josefin Sans', sans-serif;">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript: void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="index.html">Home</a>
+            <a href="#">Book Machine</a>
+            <a href="#">Check Availability</a>
+        </div>
+
+        <div id = "main">
+            <button class="openbtn" onclick="openNav()"><span> 
+                <hr color="white" width="40px" height="10px">
+                <hr color="white" width="40px" height="10px">
+                <hr color="white" width="40px" height="10px">
+            </span></button>
+        </div>
+
+        <div style="text-align: center; padding: 25px; font-family: 'Josefin Sans', sans-serif; font-size: 50px;">
+            Laundry Machine
+        </div>
+        <script>
+            function openNav(){
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px"
+            }
+
+            function closeNav(){
+                document.getElementById("mySidebar").style.width = "0px";
+                document.getElementById("main").style.marginLeft = "0px";
+            }
+
+            function myfun(){
+    return 7;
+}
+        </script>
+        <script src="index.js">
+
+        </script>
+        <center>
+        <form action="/formPost" method="POST" id="form1">
+            <p style="font-size: 20px;">Name </p><input class="forms" type="text" id="Name" name="Name" required><br> 
+            <p style="font-size: 20px;">Roll number</p><input class="forms" type="number" id="Roll" name="Roll" required><br> 
+            <p style="font-size: 20px;">Room number</p><input class="forms" type="number" id="Room" name="Room" required><br> 
+            <p style="font-size: 20px;">Email</p> <input class="forms" type="email" id="email" name="email" required><br>
+
+        </form>
+        <button  type="submit" form= "form1" style="color: gray; height: 40px; width: 100px; border-width: 2px; border: black; border-radius: 5px; margin: 10px; padding: 2px;" >
+            <p style="font-family: 'Josefin Sans', sans-serif;"> Submit</p>
+        </button>
+    </center>
+
+    </body>>
+</html>

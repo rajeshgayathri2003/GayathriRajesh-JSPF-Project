@@ -1,0 +1,75 @@
+body{
+    background-image: linear-gradient(to right,rgb(87, 82, 82), rgb(180, 176, 176), white);
+}
+
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover{
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn{
+    cursor: pointer;
+    background-color:#111;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.line{
+    width: 70px;
+    height: 10px;
+    margin: 6px 0;
+    color: #f1f1f1;
+}
+
+#main{
+    float: left;
+    transition: margin-left .5s;
+    padding: 16px;
+
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a{font-size: 18px;}
+    
+}
+
+.forms{
+    border: #111;
+    border-width: 3px;
+    border-radius: 5px;
+    margin: 3px;
+    padding: 2px;
+    height: 30px;
+    width: 200px;
+
+}
