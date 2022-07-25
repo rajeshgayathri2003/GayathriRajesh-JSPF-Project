@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+        
+    </head>
+    <body style="font-family: 'Josefin Sans', sans-serif;">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript: void(0)" class="closebtn" onclick="closeNav()">x</a>
+            <a href="#">Home</a>
+            <a href="booking.html">Book Machine</a>
+            <a href="#">Check Availability</a>
+        </div>
+
+        <div id = "main">
+            <button class="openbtn" onclick="openNav()"><span> 
+                <hr color="white" width="40px" height="10px">
+                <hr color="white" width="40px" height="10px">
+                <hr color="white" width="40px" height="10px">
+            </span></button>
+        </div>
+
+        <div style="text-align: center; padding: 25px; font-family: 'Josefin Sans', sans-serif; font-size: 50px;">
+            Laundry Machine
+        </div>
+        <p style="text-align: center; padding: 25px; font-family: 'Josefin Sans', sans-serif; font-size: 30px;">
+            The washing machine is unavailable at the current slot. Please check the Availability menu to see whose clothes are in the washing machine.
+        </p>
+        <script>
+            function openNav(){
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px"
+            }
+
+            function closeNav(){
+                document.getElementById("mySidebar").style.width = "0px";
+                document.getElementById("main").style.marginLeft = "0px";
+            }
+        </script>
+    </body>
+</html>

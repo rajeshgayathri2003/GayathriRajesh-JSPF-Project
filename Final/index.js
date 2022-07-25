@@ -12,16 +12,17 @@ OAuth2Client.setCredentials({refresh_token: '1//04K3xxjboLj03CgYIARAAGAQSNwF-L9I
 const calendar = google.calendar({version: 'v3', auth: OAuth2Client})
 
 const eventStartTime = new Date()
-eventStartTime.setDate(eventStartTime.getDay() +2)
+//console.log(eventStartTime)
+eventStartTime.setDate(eventStartTime.getDate() )
 
 const eventEndTime = new Date()
-eventEndTime.setDate(eventEndTime.getDay() +2)
-eventEndTime.setMinutes(eventEndTime.getMinutes() + 45)
+eventEndTime.setDate(eventEndTime.getDate() )
+eventEndTime.setMinutes(eventEndTime.getMinutes() + 60)
 
 const event = {
-    summary: 'Meet with Gayathri',
+    summary: 'Washing Machine',
     location: 'NIT Trichy',
-    description: 'Hostels',
+    description: 'Name',
     start: {
         dateTime: eventStartTime,
         timeZone: "America/Denver"
