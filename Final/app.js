@@ -1,4 +1,5 @@
-const express = require('express')
+const express = require('express');
+const { calendar } = require('googleapis/build/src/apis/calendar');
 
 const port = process.env.PORT || 5000;
 
@@ -19,6 +20,11 @@ app.get('/', function(req, res){
 
 app.get('/booking', function(req, res){
     return res.render('booking', {title: "Booking"})
+})
+
+app.get('availability', function(req,res){
+    return res.render('availability',{title:"availability"})
+        
 })
 
 app.post('/created', function(req, Res){
@@ -45,11 +51,11 @@ app.post('/created', function(req, Res){
         description: details,
         start: {
             dateTime: eventStartTime,
-            timeZone: "America/Denver"
+            timeZone: "Asia/Kolkata"
         },
         end: {
             dateTime: eventEndTime,
-            timeZone: "America/Denver"
+            timeZone: "Asia/Kolkata"
 
         },
         colorId: 1,
@@ -82,4 +88,7 @@ return Res.sendFile(__dirname+'/views/created.html')
 
 })
 
-app.listen(port, ()=>{console.log('Server started at http://localhost:5000')})    
+app.listen(port, ()=>{console.log('Server started at http://localhost:5000')})  
+
+
+//06c6v592dd7n2rg2flkt6q5i9o@group.calendar.google.com
